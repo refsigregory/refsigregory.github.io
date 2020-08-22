@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="id"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>My Resume/CV／Portfolio - Refsi Gregorius Sangkay</title>
     <!-- Meta -->
@@ -44,7 +44,8 @@
         <div class="top-bar container-fluid">
             <div class="actions">
                 <a class="btn d-none d-md-inline-block" href="mailto:refsisangkay@gmail.com"><i class="fa fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
-                <a class="btn" href="https://refsigregory.github.io/CV-Agustus2020.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download My Resume</a>
+                <a class="btn" href="https://refsigregory.github.io/files/cv/CV-Agustus2020.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download My Resume</a>
+                <a class="btn" id="switch-language" data-lang="en"><i class="fa fa-icon fa-globe"></i> English</a>
             </div><!--//actions-->
             <ul class="social list-inline">
                         <li class="list-inline-item"><a href="https://fb.me/refsi.sangkay"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -58,7 +59,7 @@
         <div class="intro">
             <div class="container text-center">
                 <img class="profile-image" src="assets/images/me.jpeg" alt="">
-                <h1 class="name">Refsi Gregorius S.</h1>
+                <h1 class="name">Refsi Gregorius Sangkay</h1>
                 <div class="title">Web Developer</div>
                 <div class="profile">
                     <p>Seorang mahasiswa yang hobi mengutak-atik komputer dan senang dengan pemrograman.
@@ -100,263 +101,36 @@
     <div class="wrapper container">
         <section id="experiences-section" class="experiences-section section">
             <h2 class="section-title">Work Experiences</h2>
-            <div class="timeline">
-                <div class="item">
-                    <div class="work-place">
-                        <h3 class="place">LKSN 2016 - Web Design</h3>
-                        <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Malang</div>
-                    </div>
-                    <div class="job-meta">
-                        <div class="title">Medallion of Excellence</div>
-                        <div class="time">2016</div>
-                    </div><!--//job-meta-->
-                    <div class="job-desc">
-                        <p>Menjadi wakil Sulawesi Utara sebagai Peserta Lomba Kompetensi Siswa SMK Tingkat Nasional pada tahun 2016 dan menembus Top 10.</p> 
-                    </div><!--//job-desc-->
-                </div><!--//item-->
-                
+            <div class="timeline" id="work-timeline">
+                <div>No Work Experiences</div>                
             </div><!--//timeline-->
             
         </section><!--//section-->
         
         <section id="education-section" class="education-section section">
             <h2 class="section-title">Education</h2>
-            <div class="row">
-                <div class="item col-12 col-md-4">
-                    <div class="item-inner">
-                        <h3 class="degree">Vocational School/High School</h3>
-                        <div class="education-body">
-                            SMK Kristen 1 Tomohon (STM)
-                        </div><!--//education-body-->
-                        <div class="time">2013 - 2016</div>
-                        <div class="desc">
-                            Masuk Sekolah Menegah Kejuruan di jurusan Teknik Komputer dan Jaringan. Belajar tentang pemrograman, komputer dan jaringan selama 3 tahun dan mendapat pengalaman dengan mengikuti Lomba Kompetensi Siswa (LKS) pada tahun 2015 dan 2016 dari Tingkat Kabupaten/Kota, Provinsi sampai Nasional.
-                        </div>
-                    </div><!--//item-inner-->
-                </div><!--//item-->
-                <div class="item col-12 col-md-4">
-                    <div class="item-inner">
-                        <h3 class="degree">Computer Science - Informatics Engineering</h3>
-                        <div class="education-body">
-                            De La Salle University Manado
-                        </div><!--//education-body-->
-                        <div class="time">2016 - Present</div>
-                        <div class="desc">
-                            Melanjutkan Study di Fakultas Teknik jurusan TEKNIK INFORMATIKA untuk mendalami dan menambah ilmu yang sudah dipelajari sejak SMK khususnya untuk pemrograman dan pengembangan perangkat lunak.
-                        </div>
-                    </div><!--//item-inner-->
-                </div><!--//item-->
-                
+            <div class="row" id="education-history">
+                No Education History              
             </div><!--//row-->
         </section><!--//section-->
         
-        <script>
-            var date = new Date();
-            
-            function countYear(start_from)
-            {
-                var year = date.getFullYear() - start_from;
-                return year;
-            }
-        </script>
-
         <section id="skills-section" class="skills-section section text-center">
             <h2 class="section-title">Professional Skills</h2>
             <div class="top-skills">
-                <h3 class="subtitle">Top Skills</h3>
-                <div class="row">
-                    <div class="item col-12 col-md-4">
-                        <div class="item-inner">
-                            <div class="chart-easy-pie text-center">
-                                <div class="chart-theme-1 chart" data-percent="99"><span>99</span>%<canvas height="110" width="110"></canvas></div>
-                            </div>
-                            <h4 class="skill-name">PHP</h4>
-                            <div class="level">Expert, <script>document.write(countYear(2013));</script> years</div>
-                            <div class="desc">
-                                Meruapakan bahasa pemrograman pertama yang dikuasai, dikenal sejak masuk SMK kelas 1.
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-                    <div class="item col-12 col-md-4">
-                        <div class="item-inner">
-                            <div class="chart-easy-pie text-center">
-                                <div class="chart-theme-1 chart" data-percent="97"><span>97</span>%<canvas height="110" width="110"></canvas></div>
-                            </div>
-                            <h4 class="skill-name"> CodeIgniter (PHP Framework)</h4>
-                            <div class="level">Advanced, <script>document.write(countYear(2015));</script> years</div>
-                            <div class="desc">
-                                Setelah menguasai PHP, mulai mengenal framework dan sering menggunakan CodeIgniter pada setiap projek yang dikerjakan.
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-                    <div class="item col-12 col-md-4">
-                        <div class="item-inner">
-                            <div class="chart-easy-pie text-center">
-                                <div class="chart-theme-1 chart" data-percent="75%"><span>75%</span>%<canvas height="110" width="110"></canvas></div>
-                            </div>
-                            <h4 class="skill-name"> Laravel (PHP Framework)</h4>
-                            <div class="level">Basic, <script>document.write(countYear(2019));</script> years</div>
-                            <div class="desc">
-                                Sempat belajar dari tahun 2015, dan mulai serius kembali menggunakan di tahun 2019. Hanya digunakan untuk projek yang membutuhkan.
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-					<div class="item col-12 col-md-4">
-                        <div class="item-inner">
-                            <div class="chart-easy-pie text-center">
-                                <div class="chart-theme-1 chart" data-percent="99"><span>99</span>%<canvas height="110" width="110"></canvas></div>
-                            </div>
-                            <h4 class="skill-name">HTML5 &amp; CSS3</h4>
-                            <div class="level">Expert, <script>document.write(countYear(2012));</script> years</div>
-                            <div class="desc">
-                                Biasa digunakan sejak SMP dan terus dipelajari sampai saat ini.
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-                    <div class="item col-12 col-md-4">
-                        <div class="item-inner">
-                            <div class="chart-easy-pie text-center">
-                                <div class="chart-theme-1 chart" data-percent="94"><span>94</span>%<canvas height="110" width="110"></canvas></div>
-                            </div>
-                            <h4 class="skill-name">Javascript &amp; JQuery</h4>
-                            <div class="level">Advanced, <script>document.write(countYear(2014));</script> years</div>
-                            <div class="desc">
-                                Dikenal bersamaan dengan HTML, cukup menguasai dasar tapi lebih banyak menggunakan Library seperti JQuery.
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-
-                    <div class="item col-12 col-md-4">
-                        <div class="item-inner">
-                            <div class="chart-easy-pie text-center">
-                                <div class="chart-theme-1 chart" data-percent="70"><span>70</span>%<canvas height="110" width="110"></canvas></div>
-                            </div>
-                            <h4 class="skill-name">ReactJS &amp; ReactNative</h4>
-                            <div class="level">Intermediate, <script>document.write(countYear(2019));</script> years</div>
-                            <div class="desc">
-                                Mulai di didalami untuk mengembangkan Aplikasi Mobile. Saat ini lebih banyak digunakan untuk membuat aplikasi sederhana.
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
-
-                    <div class="item col-12 col-md-4">
-                            <div class="item-inner">
-                                <div class="chart-easy-pie text-center">
-                                    <div class="chart-theme-1 chart" data-percent="75"><span>75</span>%<canvas height="110" width="110"></canvas></div>
-                                </div>
-                                <h4 class="skill-name">VB.NET</h4>
-                                <div class="level">Intermediate, <script>document.write(countYear(2015));</script> years</div>
-                                <div class="desc">
-                                    Dikenal saat awal masuk SMK, biasa membuat Program VB.NET 2010 saat sudah masuk kuliah.
-                                </div>
-                            </div><!--//item-inner-->
-                        </div><!--//item-->
-
-                    <div class="item col-12 col-md-4">
-                            <div class="item-inner">
-                                <div class="chart-easy-pie text-center">
-                                    <div class="chart-theme-1 chart" data-percent="60"><span>60</span>%<canvas height="110" width="110"></canvas></div>
-                                </div>
-                                <h4 class="skill-name">NodeJS</h4>
-                                <div class="level">Basic, <script>document.write(countYear(2017));</script> years</div>
-                                <div class="desc">
-                                    Menguasai dasar, namun lebih banyak menggunakan ReactJS.
-                                </div>
-                            </div><!--//item-inner-->
-                        </div><!--//item-->
-
-                        <div class="item col-12 col-md-4">
-                                <div class="item-inner">
-                                    <div class="chart-easy-pie text-center">
-                                        <div class="chart-theme-1 chart" data-percent="75"><span>75</span>%<canvas height="110" width="110"></canvas></div>
-                                    </div>
-                                    <h4 class="skill-name">Ionic Framework (Mobile Hybrid)</h4>
-                                    <div class="level">Intermediate, <script>document.write(countYear(2018));</script> years</div>
-                                    <div class="desc">
-                                        Digunakan untuk membuat aplikasi mobile sebelum mengenal React Native.
-                                    </div>
-                                </div><!--//item-inner-->
-                            </div><!--//item-->
-
-                    <div class="item col-12 col-md-4">
-                            <div class="item-inner">
-                                <div class="chart-easy-pie text-center">
-                                    <div class="chart-theme-1 chart" data-percent="55"><span>55</span>%<canvas height="110" width="110"></canvas></div>
-                                </div>
-                                <h4 class="skill-name">Java</h4>
-                                <div class="level">Basic, <script>document.write(countYear(2016));</script> years</div>
-                                <div class="desc">
-                                    Cukup menguasai dasar, tapi bukan pilihan utama.
-                                </div>
-                            </div><!--//item-inner-->
-                        </div><!--//item-->
-
-                        <div class="item col-12 col-md-4">
-                                <div class="item-inner">
-                                    <div class="chart-easy-pie text-center">
-                                        <div class="chart-theme-1 chart" data-percent="65"><span>65</span>%<canvas height="110" width="110"></canvas></div>
-                                    </div>
-                                    <h4 class="skill-name">Arduino</h4>
-                                    <div class="level">Intermediate, <script>document.write(countYear(2017));</script> years</div>
-                                    <div class="desc">
-					                    Lebih banyak mengerjakan sisi programming namun mengerti sedikit dasar elektronika.
-                                    </div>
-                                </div><!--//item-inner-->
-                            </div><!--//item-->
-
-                        <div class="item col-12 col-md-4">
-                                <div class="item-inner">
-                                    <div class="chart-easy-pie text-center">
-                                        <div class="chart-theme-1 chart"><span></span>%<canvas height="110" width="110"></canvas></div>
-                                    </div>
-                                    <h4 class="skill-name">MATLAB</h4>
-                                    <div class="level">Basic, <script>document.write(countYear(2019));</script> years</div>
-                                    <div class="desc">
-					                    Pernah menggunakan beberapa algoritma dan membuat program dasar seperti Steganography, Pengolahan Citra, dan lain lain.
-                                    </div>
-                                </div><!--//item-inner-->
-                            </div><!--//item-->
-
-                            <div class="item col-12 col-md-4">
-                                <div class="item-inner">
-                                    <div class="chart-easy-pie text-center">
-                                        <div class="chart-theme-1 chart" data-percent="78"><span>78</span>%<canvas height="110" width="110"></canvas></div>
-                                    </div>
-                                    <h4 class="skill-name">Python</h4>
-                                    <div class="level">Intermediate, <script>document.write(countYear(2019));</script> years</div>
-                                    <div class="desc">
-					                    Menggunakan Python untuk Machine Learning.
-                                    </div>
-                                </div><!--//item-inner-->
-                            </div><!--//item-->
-
-
-
-                    
+                <h3 class="subtitle">Programming</h3>
+                <div class="row" id="programming-skills">
+                    No Programming Skils                    
                 </div><!--//row-->
             </div><!--//top-skills-->
             
             <div class="other-skills">
                 <h3 class="subtitle">Others</h3>
-                <div class="misc-skills">
-                    <span class="skill-tag">MySQL/MariaDB</span>
-                    <span class="skill-tag">Bootstrap</span>
-                    <span class="skill-tag">Firebase</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">RestAPI</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <br>
-                    <span class="skill-tag">AngularJS</span>
-                    <span class="skill-tag">TypeScript</span>
-                    <span class="skill-tag">Flutter</span>
-                    <span class="skill-tag">Golang</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Wordpress</span>
-                    <br>
-                    <span class="skill-tag">Office</span>
-                    <span class="skill-tag">Editing</span>
-                    <span class="skill-tag">Networking</span>
-
+                <div class="misc-skills" id="other-skills">
+                    <span class="skill-tag">No Skills</span>
+                </div>
+                <h3 class="subtitle">Also Learned</h3>
+                <div class="misc-skills" id="learned-skills">
+                    <span class="skill-tag">No Skills</span>
                 </div>
             </div><!--//other-skills-->
             
