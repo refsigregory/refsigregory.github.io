@@ -48,33 +48,6 @@ $(document).ready(function() {
 	});  
 	
 
-    
-    /* ======= Isotope plugin ======= */
-    /* Ref: http://isotope.metafizzy.co/ */
-    // init Isotope    
-    var $container = $('.isotope');
-    
-    $container.imagesLoaded(function () {
-        $('.isotope').isotope({
-            itemSelector: '.item'
-        });
-    });
-    
-    // filter items on click
-    $('#filters').on( 'click', '.type', function() {
-      var filterValue = $(this).attr('data-filter');
-      $container.isotope({ filter: filterValue });
-    });
-    
-    // change is-checked class on buttons
-    $('.filters').each( function( i, typeGroup ) {
-        var $typeGroup = $( typeGroup );
-        $typeGroup.on( 'click', '.type', function() {
-          $typeGroup.find('.active').removeClass('active');
-          $( this ).addClass('active');
-        });
-    });
-
     /* CUSTOM SCRIPT */
 
     var LANG = 'id';
@@ -91,6 +64,7 @@ $(document).ready(function() {
     const programmingSkills = $("#programming-skills");
     const otherSkills = $("#other-skills");
     const learnedSkills = $("#learned-skills");
+    const portofolioItem = $("#portfolio-items");
     
 
     /* Experience */
@@ -236,6 +210,166 @@ $(document).ready(function() {
             };
             xmlhttp.open("GET", "data/json/"+LANG+"/skills.json", true);
             xmlhttp.send(); 
+
+
+            /* Portofolio */
+
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var result = JSON.parse(this.responseText);
+            
+                    portofolioItem.html(''); // Reset
+            
+                    result.forEach(setData);
+                    
+                    function setData(value, index, array) {
+
+                        let portofolio = `<div class="item `+value.type+` viewDetail col-lg-3 col-6"  style="float:left;left: 0px; top: 0px;" data-toggle="modal" data-id="`+value.id+`" data-target="#myModal">
+                        <div class="item-inner">
+                                <figure class="figure">`;
+                        
+                        if(value.image != "-" && value.image != "")
+                        {
+                            portofolio += `<img class="img-fluid portofolio-thumbnail" src="portofolio/`+value.image+`/thumbnail.png" alt="">`;
+                        } else {
+                            portofolio += `<img class="img-fluid portofolio-thumbnail" src="assets/images/No-Image-Available.png" alt="">`;
+                        }
+                        
+                        portofolio += `</figure>
+                                <div class="content text-left">
+                                    <h3 class="sub-title"><a href="#">`+value.title+`</a></h3>
+                                    <div class="meta">`+value.meta+`</div>
+                                    <div class="url">`+value.url+`</div>
+                                    `;
+                        if(value.image != "-" && value.image != "")
+                        {
+                            portofolio += `<div class="action"><a href="`+value.repo+`">View on Github</a></div>`;
+                        }  
+                        portofolio += `
+                        </div><a class="link-mask" href="#portofolio"></a>                
+                            </div>
+                        </div>`;
+                        portofolioItem.append(portofolio);
+
+                    }
+                }
+                };
+                xmlhttp.open("GET", "portofolio/index.json", true);
+                xmlhttp.send(); 
+
+
+    
+    /* ======= Isotope plugin ======= */
+    /* Ref: http://isotope.metafizzy.co/ */
+    // init Isotope    
+    var $container = $('.isotope');
+    
+    $container.imagesLoaded(function () {
+        $('.isotope').isotope({
+            itemSelector: '.item'
+        });
+    });
+    
+    // filter items on click
+    $('#filters').on( 'click', '.type', function() {
+      var filterValue = $(this).attr('data-filter');
+      $container.isotope({ filter: filterValue });
+      
+      var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var result = JSON.parse(this.responseText);
+        
+                portofolioItem.html(''); // Reset
+        
+                result.forEach(setData);
+                
+                function setData(value, index, array) {
+                    if(filterValue == "*" || value.type == filterValue.replace(".","")) {
+                        let portofolio = `<div id="viewDetail" class="item `+value.type+` col-lg-3 col-6"  style="float:left;left: 0px; top: 0px;" data-toggle="modal" data-target="#myModal" data-id="`+value.id+`">
+                        <div class="item-inner">
+                                <figure class="figure">`;
+                        
+                        if(value.image != "-" && value.image != "")
+                        {
+                            portofolio += `<img class="img-fluid portofolio-thumbnail" src="portofolio/`+value.image+`/thumbnail.png" alt="">`;
+                        } else {
+                            portofolio += `<img class="img-fluid portofolio-thumbnail" src="assets/images/No-Image-Available.png" alt="">`;
+                        }
+                        
+                        portofolio += `</figure>
+                                <div class="content text-left">
+                                    <h3 class="sub-title"><a href="#">`+value.title+`</a></h3>
+                                    <div class="meta">`+value.meta+`</div>
+                                    <div class="url">`+value.url+`</div>
+                                    `;
+                        if(value.image != "-" && value.image != "")
+                        {
+                            portofolio += `<div class="action"><a href="`+value.repo+`">View on Github</a></div>`;
+                        }  
+                        portofolio += `
+                        </div><a class="link-mask" href="#portofolio"></a>            
+                            </div>
+                        </div>`;
+                        portofolioItem.append(portofolio);
+                    }
+                }
+            }
+            };
+            xmlhttp.open("GET", "portofolio/index.json", true);
+            xmlhttp.send(); 
+
+    });
+    
+    // change is-checked class on buttons
+    $('.filters').each( function( i, typeGroup ) {
+        var $typeGroup = $( typeGroup );
+        $typeGroup.on( 'click', '.type', function() {
+          $typeGroup.find('.active').removeClass('active');
+          $( this ).addClass('active');
+        });
+    });
+
+
+    $('#myModal').on('show.bs.modal', function(e) {
+        var hashValue = location.hash.replace(/^#/, '');
+        var id = hashValue.split("&")[1];
+        id = e.relatedTarget.dataset['id']; /* ganti dengan yg dari event */
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var result = JSON.parse(this.responseText);
+                result.forEach(setData)
+                function setData(value, index, array) {
+                    let content = `<p>`;
+                    
+                    if(value.image != "-" && value.image != "")
+                    {
+                        content += `<img class="img-fluid portofolio-thumbnail" src="portofolio/`+value.image+`/preview.png" alt="">`;
+                    } else {
+                        content += `<img class="img-fluid portofolio-thumbnail" src="assets/images/No-Image-Available.png" alt="">`;
+                    }
+                    content += `   
+                    <br>
+                    `+value.desc+`                 
+                    `;
+
+                    if(value.id == id) {
+                       $(".modal-title").html(value.title);
+                       $(".modal-body").html(content);
+                    }
+                }
+            }
+            };
+            xmlhttp.open("GET", "portofolio/index.json", true);
+            xmlhttp.send(); 
+    });
+
+    $('#myModal').on('hidden.bs.modal', function () {
+        $(".modal-title").html('');
+        $(".modal-body").html('');
+    })
 
 
 });
