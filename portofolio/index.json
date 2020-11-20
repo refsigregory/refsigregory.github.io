@@ -47,7 +47,7 @@
         "meta": "PHP + JQuery",
         "desc": "",
         "url": "",
-        "repo": "https://github.com/refsisangkay/birthday"
+        "repo": "https://github.com/refsigregory/birthday"
     },
     {
         "id": "aplikasiinventarispuskesmas",
@@ -114,7 +114,7 @@
         "type": "backend",
         "image": "radarpapuaonline.com",
         "title": "Website Media Online Radar Papua",
-        "meta": "Arduino",
+        "meta": "Wordpress",
         "desc": "Website Media Online Radar Papua",
         "url": "radarpapuaonline.com",
         "repo": "#"
@@ -127,16 +127,6 @@
         "meta": "PHP (Laravel)",
         "desc": "Website DOWNLOADLAGU321 dengan API Youtube & Database MySQL",
         "url": "downloadlagu321.net",
-        "repo": "#"
-    },
-    {
-        "id": "aplikasiuntuksistempenggajuan",
-        "type": "backend",
-        "image": "",
-        "title": "Aplikasi Untuk Sistem Penggajian",
-        "meta": "PHP (CodeIgniter)",
-        "desc": "Aplikasi Untuk Sistem Penggajian",
-        "url": "projects.ref.si/penggajian",
         "repo": "#"
     },
     {
@@ -183,20 +173,20 @@
         "id": "qcellpulsa.com",
         "type": "backend",
         "image": "qcellpulsa.com",
-        "title": "Aplikasi Penjualan Pulsa menggunakan API DFLASH dengan Pembayaran menggunakan API Paypal (Otomatis) dan Bank Transfer (Manual)",
+        "title": "Aplikasi Penjualan Pulsa ",
         "meta": "PHP",
-        "desc": "Aplikasi Penjualan Pulsa menggunakan API DFLASH dengan Pembayaran menggunakan API Paypal (Otomatis) dan Bank Transfer (Manual)",
+        "desc": "Menggunakan API DFLASH dengan Pembayaran menggunakan API Paypal (Otomatis) dan Bank Transfer (Manual)",
         "url": "qcellpulsa.com",
         "repo": "#"
     },
     {
         "id": "aplikasipencariangkot",
         "type": "backend",
-        "image": "",
+        "image": "aplikasipencariangkot",
         "title": "Prototype Aplikasi Pencarian Angkot menggunakan Google Map dan Metode Djikstra",
         "meta": "React Native, Rest API, PHP (CodeIgniter)",
         "desc": "Prototype Aplikasi Pencarian Angkot menggunakan Google Map dan Metode Djikstra",
-        "url": "",
+        "url": "domikro.ref.si",
         "repo": "#"
     },
     {
@@ -207,6 +197,16 @@
         "meta": "CodeIgniter",
         "desc": "Aplikasi Sederhana Pendaftaran dan Pembagian Kelas Untuk Pendaftaran Kursus",
         "url": "",
+        "repo": "#"
+    },
+    {
+        "id": "aplikasiuntunksistempenggajian",
+        "type": "backend",
+        "image": "aplikasiuntunksistempenggajian",
+        "title": "Aplikasi Untuk Sistem Penggajian",
+        "meta": "PHP (CodeIgniter)",
+        "desc": "Aplikasi Untuk Sistem Penggajian Universitas Katolik De La Salle Manado",
+        "url": "projects.ref.si/penggajian",
         "repo": "#"
     },
     {
@@ -230,16 +230,6 @@
         "repo": "#"
     },
     {
-        "id": "aplikasiuntuksistempenggajian",
-        "type": "backend",
-        "image": "",
-        "title": "Aplikasi Untuk Sistem Penggajian",
-        "meta": "CodeIgniter",
-        "desc": "Aplikasi Untuk Sistem Penggajian",
-        "url": "projects.ref.si/penggajian",
-        "repo": "#"
-    },
-    {
         "id": "celebestoday.id",
         "type": "backend",
         "image": "celebestoday.id",
@@ -253,11 +243,11 @@
         "id": "tapendeteksitypo",
         "type": "ml",
         "image": "",
-        "title": "Pendeteksi Typo dengan Metode Q-Learning (Reinforcement Learning)",
+        "title": "Pendeteksi Typo dengan Metode Q-Learning",
         "meta": "Wordpress",
         "desc": "Pendeteksi Typo dengan Metode Q-Learning (Reinforcement Learning)",
         "url": "pendeteksi-type.ref.si",
-        "repo": "https://github.com/refsisangkay/pendeteksti-typo"
+        "repo": "https://github.com/refsigregory/pendeteksti-typo"
     }
 
 ]

@@ -220,12 +220,14 @@ $(document).ready(function() {
                     var result = JSON.parse(this.responseText);
             
                     portofolioItem.html(''); // Reset
+
+                    let portofolio = "";
             
                     result.forEach(setData);
                     
                     function setData(value, index, array) {
 
-                        let portofolio = `<div class="item `+value.type+` viewDetail col-lg-3 col-6"  style="float:left;left: 0px; top: 0px;" data-toggle="modal" data-id="`+value.id+`" data-target="#myModal">
+                        portofolio += `<div class="item `+value.type+` viewDetail col-lg-3 col-6" style="display:inline-block;left: 0px; top: 0px;" data-toggle="modal" data-id="`+value.id+`" data-target="#myModal">
                         <div class="item-inner">
                                 <figure class="figure">`;
                         
@@ -242,17 +244,19 @@ $(document).ready(function() {
                                     <div class="meta">`+value.meta+`</div>
                                     <div class="url">`+value.url+`</div>
                                     `;
-                        if(value.image != "-" && value.image != "")
+                        if(value.repo != "#" && value.repo != "")
                         {
-                            portofolio += `<div class="action"><a href="`+value.repo+`">View on Github</a></div>`;
+                            portofolio += `<div class="action"><a href="`+value.repo+`" target="_blank">View on Github</a></div>`;
                         }  
                         portofolio += `
                         </div><a class="link-mask" href="#portofolio"></a>                
                             </div>
                         </div>`;
-                        portofolioItem.append(portofolio);
 
+                        portofolioItem.html(portofolio);
+                        
                     }
+
                 }
                 };
                 xmlhttp.open("GET", "portofolio/index.json", true);
@@ -287,7 +291,7 @@ $(document).ready(function() {
                 
                 function setData(value, index, array) {
                     if(filterValue == "*" || value.type == filterValue.replace(".","")) {
-                        let portofolio = `<div id="viewDetail" class="item `+value.type+` col-lg-3 col-6"  style="float:left;left: 0px; top: 0px;" data-toggle="modal" data-target="#myModal" data-id="`+value.id+`">
+                        let portofolio = `<div id="viewDetail" class="item `+value.type+` col-lg-3 col-6"  style="display:inline-block;left: 0px; top: 0px;" data-toggle="modal" data-target="#myModal" data-id="`+value.id+`">
                         <div class="item-inner">
                                 <figure class="figure">`;
                         
@@ -304,9 +308,9 @@ $(document).ready(function() {
                                     <div class="meta">`+value.meta+`</div>
                                     <div class="url">`+value.url+`</div>
                                     `;
-                        if(value.image != "-" && value.image != "")
+                        if(value.repo != "#" && value.repo != "")
                         {
-                            portofolio += `<div class="action"><a href="`+value.repo+`">View on Github</a></div>`;
+                            portofolio += `<div class="action"><a href="`+value.repo+`" target="_blank">View on Github</a></div>`;
                         }  
                         portofolio += `
                         </div><a class="link-mask" href="#portofolio"></a>            
@@ -350,10 +354,21 @@ $(document).ready(function() {
                     } else {
                         content += `<img class="img-fluid portofolio-thumbnail" src="assets/images/No-Image-Available.png" alt="">`;
                     }
-                    content += `   
+                    if(value.url != "-" && value.url != "")
+                        {
+                        content += `  
+                        <br>
+                        URL: <a>`+value.url+`</a>                 
+                        `;
+                    }
+                    content += `  
                     <br>
                     `+value.desc+`                 
                     `;
+                    if(value.repo != "#" && value.repo != "")
+                        {
+                            content += `<br><div style="text-align:center"><a href="`+value.repo+`" target="_blank">View on Github</a></div>`;
+                        }  
 
                     if(value.id == id) {
                        $(".modal-title").html(value.title);
