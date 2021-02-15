@@ -50,16 +50,6 @@
         "repo": "https://github.com/refsigregory/birthday"
     },
     {
-        "id": "aplikasiinventarispuskesmas",
-        "type": "backend",
-        "image": "-",
-        "title": "Inventaris Puskesmas",
-        "meta": "PHP",
-        "desc": "Aplikasi Sederhana untuk Inventaris Puskesmas",
-        "url": "",
-        "repo": "#"
-    },
-    {
         "id": "pendataanpohonandroid",
         "type": "mobile",
         "image": "-",
@@ -187,16 +177,6 @@
         "meta": "React Native, Rest API, PHP (CodeIgniter)",
         "desc": "Prototype Aplikasi Pencarian Angkot menggunakan Google Map dan Metode Djikstra",
         "url": "domikro.ref.si",
-        "repo": "#"
-    },
-    {
-        "id": "aplikasisederhanapendaftarankursus",
-        "type": "backend",
-        "image": "",
-        "title": "Aplikasi Sederhana Pendaftaran dan Pembagian Kelas Untuk Pendaftaran Kursus",
-        "meta": "CodeIgniter",
-        "desc": "Aplikasi Sederhana Pendaftaran dan Pembagian Kelas Untuk Pendaftaran Kursus",
-        "url": "",
         "repo": "#"
     },
     {
