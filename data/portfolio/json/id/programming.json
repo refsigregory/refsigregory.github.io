@@ -1,0 +1,65 @@
+[
+    {
+        "name": "PHP",
+        "level": "Expert",
+        "year": "2013",
+        "desc": "Bahasa pemrograman pertama yang dikuasai, dikenal sejak masuk SMK kelas 1. Sejak tahun 2015 mulai mengenal framework dan menggunakan Codeigniter untuk semua project Web. Selain CodeIgniter, jika diperlukan akan menggunakan framework lain seperti Laravel.",
+        "percent": "99"
+    },
+    {
+        "name": "HTML",
+        "level": "Expert",
+        "year": "2012",
+        "desc": "Dikenal sejak SMP.",
+        "percent": "99"
+    },
+    {
+        "name": "CSS",
+        "level": "Expert",
+        "year": "2012",
+        "desc": "Dikenal bersamaan dengan CSS.",
+        "percent": "99"
+    },
+    {
+        "name": "Javascript",
+        "level": "Advanced",
+        "year": "2014",
+        "desc": "Banyak menggunakan Library seperti jQuery. Saat ini mulai mendalami ReactJS sebagai Front-End dan React Native untuk Mobile Application.",
+        "percent": "94"
+    },
+    {
+        "name": "Visual Basic",
+        "level": "Intermediate",
+        "year": "2015",
+        "desc": "Pertama dikenal saat SMK dan mulai membuat program VB.NET saat semester awal kuliah.",
+        "percent": "75"
+    },
+    {
+        "name": "Java",
+        "level": "Basic",
+        "year": "2016",
+        "desc": "Dapat membuat aplikasi sederhana, namun tidak terlalu didalami.",
+        "percent": "60"
+    },
+    {
+        "name": "Arduino",
+        "level": "Intermediate",
+        "year": "2017",
+        "desc": "Lebih banyak mengerjakan sisi programming namun sedikit mengerti dasar elektronika. ",
+        "percent": "65"
+    },
+    {
+        "name": "Python",
+        "level": "Intermediate",
+        "year": "2019",
+        "desc": "Mulai digunaakan saat membuat program Artifical Intelegence (AI) dan saat ini mulai didalami untuk membangun program AI dan Machine Learning.",
+        "percent": "80"
+    },
+    {
+        "name": "Matlab",
+        "level": "Basic",
+        "year": "2019",
+        "desc": "Hanya belajar dasar. Pernah menggunakan beberapa algoritma dan membuat program dasar seperti Steganography, Pengolahan Citra, dan lain lain. ",
+        "percent": "45"
+    }
+]

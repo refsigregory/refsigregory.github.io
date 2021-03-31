@@ -1,0 +1,29 @@
+[
+    {
+        "place": "LKSN 2016 - Web Design",
+        "location": "Malang",
+        "job": {
+            "title": "Medallion of Excellence",
+            "time": "2016",
+            "desc": "Menjadi wakil Sulawesi Utara sebagai Peserta Lomba Kompetensi Siswa SMK Tingkat Nasional pada tahun 2016 dan menembus Top 10."
+        }
+    },
+    {
+        "place": "Freelancer",
+        "location": "Manado",
+        "job": {
+            "title": "Web Developer",
+            "time": "2017 -",
+            "desc": "Menjadi freelance untuk membuat aplikasi bebasis Web, sesekali menerima pembuatan aplikasi desktop dan memperbaiki bug pada website. Biasa menggunakan Codeigniter untuk standar web yang dikerjakan, bisa menyesuaikan sesuai permintaan."
+        }
+    },
+    {
+        "place": "Project Based Web Developer",
+        "location": "Remote",
+        "job": {
+            "title": "Back-End Developer",
+            "time": "April 2021",
+            "desc": "Dikontrak dalam team untuk pembangunan aplikasi Mobile sebagai Back-End Developer. Membangun Web Service menggunakan Framework Laravel dan Git untuk kolaborasi."
+        }
+    }
+]

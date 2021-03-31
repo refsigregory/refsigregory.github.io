@@ -1,0 +1,29 @@
+[
+    {
+        "place": "LKSN 2016 - Web Design",
+        "location": "Malang",
+        "job": {
+            "title": "Medallion of Excellence",
+            "time": "2016",
+            "desc": "Represent North Sulawesi as a participant in the National Level Vocational High School Student Competency Contest in 2016 and have Top 10. "
+        }
+    },
+    {
+        "place": "Freelancer",
+        "location": "Manado",
+        "job": {
+            "title": "Web Developer",
+            "time": "2017 -",
+            "desc": "Do freelance jobs to create Web-based applications, desktop application development and fixing bugs on the website. Using Codeigniter for major web projects and adjust with requirements."
+        }
+    },
+    {
+        "place": "Project-Based Web Developer",
+        "location": "Remote / Working from home",
+        "job": {
+            "title": "Back-End Developer",
+            "time": "April 2021",
+            "desc": "Contribute in Mobile Application as Back-End Developer. Building Web Service using Laravel Framework and collaborate using Git."
+        }
+    }
+]

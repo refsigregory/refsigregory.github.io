@@ -1,0 +1,65 @@
+[
+    {
+        "name": "PHP",
+        "level": "Expert",
+        "year": "2013",
+        "desc": "It is the first programming language to be mastered, known since entering High School class 1. Since 2015, he has begun to recognize frameworks and use Codeigniter for all Web projects. Apart from CodeIgniter and if needed I will use other frameworks such as Laravel.",
+        "percent": "99"
+    },
+    {
+        "name": "HTML",
+        "level": "Expert",
+        "year": "2012",
+        "desc": "Known since junior high school and is often used today. ",
+        "percent": "99"
+    },
+    {
+        "name": "CSS",
+        "level": "Expert",
+        "year": "2012",
+        "desc": "Known with css CSS.",
+        "percent": "99"
+    },
+    {
+        "name": "Javascript",
+        "level": "Advanced",
+        "year": "2014",
+        "desc": "Most use libraries such as jQuery. Currently starting to explore ReactJS as Front-End and React Native for Mobile Applications.",
+        "percent": "94"
+    },
+    {
+        "name": "Visual Basic",
+        "level": "Intermediate",
+        "year": "2015",
+        "desc": "The first was known from High School, starting to make the VB.NET program during the first semester of college.",
+        "percent": "75"
+    },
+    {
+        "name": "Java",
+        "level": "Basic",
+        "year": "2016",
+        "desc": "Can create simple applications, but not too deep.",
+        "percent": "60"
+    },
+    {
+        "name": "Arduino",
+        "level": "Intermediate",
+        "year": "2017",
+        "desc": "More work on the programming side but understand a little basic electronics.",
+        "percent": "65"
+    },
+    {
+        "name": "Python",
+        "level": "Intermediate",
+        "year": "2019",
+        "desc": "It started to be used when creating Artificial Intelligence (AI) programs and is currently starting to be explored to build AI and Machine Learning programs.",
+        "percent": "80"
+    },
+    {
+        "name": "Matlab",
+        "level": "Basic",
+        "year": "2019",
+        "desc": "Just learn the basics. Have used several algorithms and created basic programs such as Steganography, Image Processing, and others. ",
+        "percent": "45"
+    }
+]

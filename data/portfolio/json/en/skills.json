@@ -1,0 +1,36 @@
+
+{
+    "skills": [
+        "Basic Artifical Intellegence & Machine Learning",
+        "Linux",
+        "Android Development",
+        "Mobile Application Development",
+        "REST API",
+        "MySQL/MariaDB",
+        "CodeIgniter",
+        "Laravel",
+        "Bootstrap",
+        "Git",
+        "Github",
+        "Gitlab",
+        "NodeJS",
+        "AngularJS",
+        "IONIC",
+        "Flutter",
+        "Android Studio",
+        "Flask",
+        "Wordpress",
+        "Firebase"
+    ],
+    "learned": [
+        "Basic Networking",
+        "Basic Office",
+        "Basic Editing",
+        "MongoDB",
+        "PostgreSQL",
+        "Kotlin",
+        "Django",
+        "TypeScript",
+        "GoLang"
+    ]
+}
